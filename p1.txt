@@ -1,0 +1,67 @@
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/new/projectdemo (master)
+$ cd ..
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/new
+$ cd ..
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub
+$ cd folder1
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1
+$ git init
+Initialized empty Git repository in C:/Users/Arun/Documents/GitHub/folder1/.git/
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ ls-la
+bash: ls-la: command not found
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ ls - la
+ls: cannot access '-': No such file or directory
+ls: cannot access 'la': No such file or directory
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ ls-la
+bash: ls-la: command not found
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ ls -la
+total 8
+drwxr-xr-x 1 Arun_Kant 197121 0 Aug 28 11:00 ./
+drwxr-xr-x 1 Arun_Kant 197121 0 Aug 28 10:59 ../
+drwxr-xr-x 1 Arun_Kant 197121 0 Aug 28 11:00 .git/
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ git add -A
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ git commit -m"finish"
+[master (root-commit) a02339b] finish
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 p1.txt
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ $ git remote add origin
+bash: $: command not found
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ $ git remote add origin
+bash: $: command not found
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ git remote add origin https://github.com/akarunkant/folder1.git
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ git remote -v
+origin  https://github.com/akarunkant/folder1.git (fetch)
+origin  https://github.com/akarunkant/folder1.git (push)
+
+Arun_Kant@Arun-VAIO MINGW64 ~/Documents/GitHub/folder1 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 202 bytes | 67.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/akarunkant/folder1.git
+ * [new branch]      master -> master
